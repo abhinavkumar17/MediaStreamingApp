@@ -40,7 +40,7 @@ class HomeRecyclerAdapter(
         Glide.with(mContext)
             .setDefaultRequestOptions(requestOptions)
             .load(iconResource)
-            .into((viewHolder as ViewHolder).category_icon)
+            .into((viewHolder ).category_icon)
     }
 
     inner class ViewHolder(
@@ -80,6 +80,6 @@ class HomeRecyclerAdapter(
     }
 
     override fun getItemCount(): Int {
-        TODO("Not yet implemented")
+       return mCategories.size
     }
 }

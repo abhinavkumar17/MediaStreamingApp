@@ -27,7 +27,7 @@ class PlaylistRecyclerAdapter(
         (viewHolder as ViewHolder).title.setText(
             mMediaList[i].getDescription().getTitle()
         )
-        (viewHolder as ViewHolder).artist.setText(
+        (viewHolder ).artist.setText(
             mMediaList[i].getDescription().getSubtitle()
         )
         if (i == mSelectedIndex) {

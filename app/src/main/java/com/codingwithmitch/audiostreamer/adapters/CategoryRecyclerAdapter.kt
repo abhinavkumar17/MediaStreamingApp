@@ -32,7 +32,7 @@ class CategoryRecyclerAdapter(
         Glide.with(mContext)
             .setDefaultRequestOptions(options)
             .load(mArtists[i].image)
-            .into((viewHolder as ViewHolder).image)
+            .into((viewHolder).image)
     }
 
     inner class ViewHolder(
